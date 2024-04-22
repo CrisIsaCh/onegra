@@ -11,7 +11,8 @@ header {
 
 
 }
-section{
+
+section {
     display: flex;
     position: relative;
 }
@@ -28,7 +29,7 @@ section{
     width: 100%;
     height: 720px;
     object-fit: cover;
-   
+
 
 
 
@@ -38,8 +39,25 @@ section{
     width: 40%;
     background-color: #000;
     position: relative;
+    
+    /* background: linear-gradient();
 
+    background-image: url(asset/hamburguesa-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 800px auto;
+    background-position: center; */
+    filter: drop-shadow(1px 1px 20px rgb(93, 76, 53));
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
 
+.imagen-hambur{
+    height: 500px;
+    object-fit: cover;
+    filter: drop-shadow(1px 1px 50px rgb(255, 85, 0));
+    z-index: 2;
+    
 }
 
 
@@ -60,26 +78,27 @@ section{
     clip-path: polygon(100% 0, 68% 50%, 100% 100%);
     height: 100%;
     position: absolute;
-    width:250px;
+    width: 250px;
     top: 0;
     left: -249px;
     right: 0;
-    
-   
-    
-    
-  
+    z-index: 0;
+
+
+
+
 
 
 }
-.contenedor img{
+
+.imagen-logo {
     position: absolute;
     width: 200px;
-    left:-164px;
+    left: -164px;
     top: 36%;
-    
-    
-   
-    
-}
+    z-index: 3;
 
+
+
+
+}
