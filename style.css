@@ -80,6 +80,7 @@ li:hover {
 
 header {
     display: flex;
+    overflow-x: hidden;
 }
 
 section {
@@ -135,7 +136,9 @@ object-fit: cover;
 
 
 }
-
+.nav{
+   
+}
 
 
 .nav ul {
@@ -145,11 +148,13 @@ object-fit: cover;
 
     gap: 21px;
     align-items: center;
+    
 }
 
 
 .nav ul li a {
     color: #fff;
+   
 }
 
 .shape {
@@ -180,6 +185,81 @@ object-fit: cover;
     filter: drop-shadow(1px 1px 10px rgb(192, 176, 153));
 
 
+}
+
+/****************main***************/
+
+
+
+.section-slider {
+    position: relative;
+    top: -4px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #859398, #283048);
+    /* padding: 20px; */
+} 
+
+.container-carusel {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+    
+    overflow: hidden;
+    position: relative;
+    
+}
+/* ppara agrgar o disminuir aca */
+.carruseles {
+    width: 400%;/*4 imagenes*/
+    height: 100%;
+    display: flex;
+    /* transform: translateX(-66.6%); */
+    
+}
+
+.slider-section{
+    width: calc(100%/4);/*dividido 4 imagnes*/
+    height: 100%;
+    
+}
+.slider-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.btn-left,
+.btn-right{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    color: #e0e0e0;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translate(0 -50%);
+    transition: .5s ease;
+    user-select: none; 
+
+
+}
+.btn-left:hover,
+.btn-right:hover{
+    background-color: #333333d4;
+    color:#ffff ;
+}
+.btn-left{
+    left: 10px;
+}
+.btn-right{
+    right:  10px;
 }
 
 
