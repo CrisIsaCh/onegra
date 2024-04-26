@@ -48,6 +48,6 @@ function moveToLeft() {
     slider.style.transition="all ease .9s"
 
 }
-// setInterval(() => {
-//    moveToRight() 
-// }, 5000);
+setInterval(() => {
+   moveToRight() 
+}, 5000);

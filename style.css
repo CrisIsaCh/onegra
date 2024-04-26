@@ -222,6 +222,7 @@ object-fit: cover;
 }
 
 .slider-section{
+    position: relative;
     width: calc(100%/4);/*dividido 4 imagnes*/
     height: 100%;
     
@@ -230,6 +231,8 @@ object-fit: cover;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: brightness(65%);
+   
     
 }
 .btn-left,
@@ -260,6 +263,103 @@ object-fit: cover;
 }
 .btn-right{
     right:  10px;
+}
+.tragostitle1{
+    position: absolute;
+    color: #fff;
+    top: 35%;
+    left:50%;
+    width:45vw;
+
+}
+.tragostitle1 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: 'Gothic A1';
+    letter-spacing: 10px;
+    text-align: end;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.019);
+}
+.tragostitle1 p{
+    font-family: 'Lato';
+    font-size: 20px;
+    text-align: end;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.019);
+}
+.tragostitle2{
+    position: absolute;
+    color: #fff;
+    top: 35%;
+    left:18%;
+    width:45vw;
+
+}
+.tragostitle2 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: 'Gothic A1';
+    letter-spacing: 10px;
+    text-align: end;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.019);
+}
+.tragostitle2 p{
+    font-family: 'Lato';
+    font-size: 20px;
+    text-align: end;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.019);
+}
+.tragostitle3{
+    position: absolute;
+    color: #fff;
+    top: 35%;
+    left:8%;
+    width:45vw;
+
+}
+.tragostitle3 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: 'Gothic A1';
+    letter-spacing: 10px;
+    text-align: start;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.019);
+}
+.tragostitle3 p{
+    font-family: 'Lato';
+    font-size: 20px;
+    text-align: start;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.019);
+    
+}
+.tragostitle4{
+    position: absolute;
+    color: #fff;
+    top: 35%;
+    left:20%;
+    width:60vw;
+}
+.tragostitle4 h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    font-family: 'Gothic A1';
+    letter-spacing: 10px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.019);
+}
+.tragostitle4 p{
+    font-family: 'Lato';
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.019);
+    
 }
 
 
