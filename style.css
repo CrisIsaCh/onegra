@@ -45,9 +45,10 @@ button {
     cursor: pointer;
 }
 
-.ver{
+.ver {
     display: none;
 }
+
 .header-section {
     display: flex;
     overflow-x: hidden;
@@ -559,6 +560,138 @@ section {
 
 }
 
+/***********************Contacto******************/
+.contacto {
+    background-color: #848080;
+    display: flex;
+    border-top: 5px solid #ff5e00;
+}
+
+.contacto-izquierda {
+    width: 40%;
+    height: 550px;
+
+}
+
+.contacto-izquierda img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contacto-derecha {
+    width: 60%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 60px 70px;
+
+
+}
+.contacto-derecha  div h1{
+    padding-bottom: 25px;
+    font-family: 'Gothic A1';
+    font-size: 50px;
+    color: #fff;
+}
+
+.formulario {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.formulario form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 1px;
+    height: 100%;
+    padding: 3px;
+
+
+}
+
+.formulario form div {
+    width: 100%;
+
+}
+
+input,
+select {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    background-color: #000;
+    color: #e0e0e0;
+    border-radius: 5px;
+    font-size: 10px;
+    text-transform: uppercase;
+
+}
+input::placeholder{
+    color: aliceblue;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 10px;
+    background-color: #000;
+}
+textarea::placeholder{
+    color: aliceblue;
+}
+
+.item1 {
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item4 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+}
+
+.item5 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.item6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item7 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.item8 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.item9 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
 /*-------------------------------------*/
 /* BOTON WHATSSAP */
 .btn-wsp {
@@ -713,14 +846,14 @@ section {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
+
         backdrop-filter: blur(5px);
-        
-    
+
+
 
     }
 
-    
+
 
     .btn-hambur {
         display: flex;
@@ -737,17 +870,18 @@ section {
         padding: 5px;
         color: #ff5e00;
         font-size: 30px;
-        
+
 
 
 
 
     }
 
-    .btn-hambur:hover{
+    .btn-hambur:hover {
         border: solid 1px #ffffff;
     }
-    .btn-burger:hover{
+
+    .btn-burger:hover {
         color: #fff;
     }
 
