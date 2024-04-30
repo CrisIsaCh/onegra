@@ -7,15 +7,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
+    font-style: normal;
 
 }
- body{
+
+body {
     background-color: #000;
- }
+
+}
+
 ol,
 ul {
     list-style: none;
+    font-style: normal;
 
     font-family: 'Lato';
     font-weight: 300;
@@ -36,11 +40,14 @@ li:hover {
 
 
 }
-button{
+
+button {
     cursor: pointer;
 }
 
-
+.ver{
+    display: none;
+}
 .header-section {
     display: flex;
     overflow-x: hidden;
@@ -85,6 +92,20 @@ section {
 
 }
 
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav .btn-hambur {
+    display: none;
+}
+
+.nav-logo {
+    display: none;
+}
+
+
 .nav ul {
     display: flex;
     height: 70px;
@@ -100,12 +121,14 @@ section {
     color: #fff;
 
 }
+
 .contenedor-img {
     position: relative;
     display: flex;
     justify-content: center;
 
 }
+
 .imagen-hambur {
     height: 500px;
     object-fit: cover;
@@ -115,6 +138,7 @@ section {
 
 
 }
+
 .oveja-negra-title {
     display: flex;
     position: absolute;
@@ -190,9 +214,14 @@ section {
 
 }
 
+.imagen-logo1 {
+    display: none;
+
+}
+
 /****************main***************/
 
-/************************SLIDER********************/ 
+/************************SLIDER********************/
 
 .section-slider {
     position: relative;
@@ -296,7 +325,7 @@ section {
     text-align: end;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.019);
-    
+
 }
 
 .tragostitle1 p {
@@ -414,8 +443,8 @@ section {
     font-family: 'Gothic A1';
     font-size: 50px;
     font-weight: 900;
-   
-    
+
+
 }
 
 .title-services p {
@@ -442,7 +471,7 @@ section {
 
     justify-content: space-between;
 
-   margin: 25px 0;
+    margin: 25px 0;
     flex-grow: 1;
     align-items: start;
     background-color: #3035472b;
@@ -473,13 +502,14 @@ section {
     width: 84px;
     position: relative;
     right: -75%;
-    
+
     background-color: #ff5e00;
     padding: 13px 0;
     border: none;
     color: #fff;
 
 }
+
 /*************************************************/
 
 
@@ -491,7 +521,7 @@ section {
 
     justify-content: space-between;
 
-   margin: 25px 0;
+    margin: 25px 0;
     flex-grow: 1;
     align-items: start;
     background-color: #3035472b;
@@ -499,6 +529,7 @@ section {
 
 
 }
+
 .card-serv1 img {
     width: 100%;
     height: 275px;
@@ -520,13 +551,14 @@ section {
     width: 84px;
     position: relative;
     right: -75%;
-    
+
     background-color: #ff5e00;
     padding: 13px 0;
     border: none;
     color: #fff;
 
 }
+
 /*-------------------------------------*/
 /* BOTON WHATSSAP */
 .btn-wsp {
@@ -543,7 +575,9 @@ section {
     font-size: 30px;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
     z-index: 100;
+
 }
+
 
 .btn-wsp:hover {
     text-decoration: none;
@@ -629,112 +663,200 @@ section {
 
 
 }
+
 @media screen and (max-width:766px) {
     .header-section {
         display: flex;
-      flex-direction: column-reverse;
+        flex-direction: column-reverse;
     }
-    
-   
-    
+
+
+
     .contenedor-video {
         width: 100%;
-    
+
     }
-    
+
     .contenedor-video img {
         width: 100%;
-    
+
     }
-    
+
     .contenedor-video video {
         width: 100%;
         height: 726px;
-    
+
         object-fit: cover;
-    
-    
-    
+
+
+
     }
-    
-    
+
+
     /***************************/
     .contenedor {
-        width:100%;
+        width: 100%;
         background-color: #000;
         position: relative;
-    
+
         filter: drop-shadow(1px 1px 20px #000000);
         display: flex;
         flex-direction: column;
-        gap: 90px;
-    
+        gap: 5px;
+
     }
-    
-    .nav ul {
+
+    .ver {
+        width: 100%;
+        position: fixed;
+        z-index: 100;
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        backdrop-filter: blur(5px);
+        
+    
+
+    }
+
+    
+
+    .btn-hambur {
+        display: flex;
+        justify-content: center;
+        filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+        align-items: center;
+        border: solid 1px #ff5e00;
+        border-radius: 12px;
+        margin-left: 8px;
+
+    }
+
+    .btn-burger {
+        padding: 5px;
+        color: #ff5e00;
+        font-size: 30px;
+        
+
+
+
+
+    }
+
+    .btn-hambur:hover{
+        border: solid 1px #ffffff;
+    }
+    .btn-burger:hover{
+        color: #fff;
+    }
+
+    .nav-logo {
+        display: block;
+        height: 70px;
+    }
+
+    .nav ul {
+        display: none;
         height: 70px;
         justify-content: center;
-    
+
         gap: 21px;
         align-items: center;
-    
+
     }
-    
-    
+
+
     .nav ul li a {
         color: #fff;
-    
+
     }
+
     .contenedor-img {
         position: relative;
         display: flex;
         justify-content: center;
-    
+        padding-top: 80px;
+        padding-bottom: 50px;
+        width: 100%;
+
+
+
     }
+
     .imagen-hambur {
-        height: 250px;
+        height: 350px;
         object-fit: cover;
         filter: drop-shadow(1px 1px 50px rgb(255, 85, 0));
         z-index: 2;
-    
-    
-    
-    } 
-    
-    
-    
-    .shape {
-        background-color: rgb(255, 255, 255);
-        clip-path: polygon(100% 0, 68% 50%, 100% 100%);
-        
-        position: absolute;
-        width: 250px;
-        
-        top:450px;
-        left:250px;
-       
-        z-index: 0;
-        transform: rotate(270deg);
-        display: none;
-    
-    
-    
-    
-    
-    
+        flex-grow: 1;
+
+
+
     }
-    
-    .imagen-logo {
+
+    .oveja-negra-title {
+        display: flex;
+        position: absolute;
+        flex-wrap: wrap;
+        top: 35%;
+
+        gap: 5px;
+
+
+    }
+
+
+    .titulo {
+
+        color: #fff;
+        z-index: 33;
+
+
+
+        font-size: 70px;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue';
+        text-shadow: 1px 1px 2px rgb(29, 28, 28);
+
+    }
+
+    .titulo-negra {
+
+
+        color: #000000;
+        z-index: 33;
+
+        font-size: 70px;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue';
+        text-shadow: 1px 1px 2px rgb(255, 255, 255);
+
+    }
+
+    .imagen-logo1 {
+        display: block;
         position: absolute;
         width: 100px;
-        left: 200px;
+        left: 50%;
         top: 90%;
         z-index: 3;
-    
+
         filter: drop-shadow(1px 1px 10px rgb(192, 176, 153));
-    
-    
+
+
     }
+
+
+
+    .shape {
+
+        display: none;
+    }
+
+    .imagen-logo {
+        display: none;
+    }
+
 
 }
