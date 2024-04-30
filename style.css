@@ -501,13 +501,13 @@ section {
 
 .card-serv button {
     width: 84px;
-    position: relative;
-    right: -75%;
+   
 
     background-color: #ff5e00;
     padding: 13px 0;
     border: none;
     color: #fff;
+    align-self: flex-end;
 
 }
 
@@ -550,19 +550,19 @@ section {
 
 .card-serv1 button {
     width: 84px;
-    position: relative;
-    right: -75%;
+   
 
     background-color: #ff5e00;
     padding: 13px 0;
     border: none;
     color: #fff;
+    align-self: flex-end;
 
 }
 
 /***********************Contacto******************/
 .contacto {
-    background-color: #848080;
+    background-color: #000000;
     display: flex;
     border-top: 5px solid #ff5e00;
 }
@@ -584,33 +584,46 @@ section {
     height: 550px;
     display: flex;
     flex-direction: column;
+    
 
     align-items: center;
-    padding: 60px 70px;
+    padding: 60px 70px 30px;
 
 
 }
+.contacto-form-der{
+    display: flex;
+    flex-direction: column;
+    background-color: #08090c;
+    height: 100%;
+    align-items: center;
+   
+}
 .contacto-derecha  div h1{
+    padding-top: 20px;
     padding-bottom: 25px;
     font-family: 'Gothic A1';
     font-size: 50px;
+
     color: #fff;
 }
 
 .formulario {
     width: 100%;
     height: 100%;
-    background-color: #ffffff;
-    border-radius: 5px;
+    
+   
+    padding: 0 35px;
 }
 
 .formulario form {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, auto);
-    gap: 1px;
+    gap:4px;
     height: 100%;
-    padding: 3px;
+    /* padding: 3px; */
+    
 
 
 }
@@ -625,24 +638,45 @@ select {
     width: 100%;
     height: 100%;
     padding: 0 10px;
-    background-color: #000;
-    color: #e0e0e0;
-    border-radius: 5px;
-    font-size: 10px;
-    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #000000;
+    
+    font-size: 12px;
+    font-weight: bold;
+   
+    border: 1px solid white;
+    font-family: 'Lato';
+    
 
 }
 input::placeholder{
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 
 textarea {
     width: 100%;
     padding: 10px 10px;
-    background-color: #000;
+    background-color: #ffffff;
+    
+    border: 1px solid white;
+    
 }
 textarea::placeholder{
     color: aliceblue;
+}
+.btn-enviar{
+    background-color: #ff5e00;
+    border: none;
+    border-radius: 0px;
+    color: #fff;
+    padding: 3px 0;
+    
+   
+}
+.btn-enviar:hover{
+    background-color: #ffffff;
+    color: #000;
+    font-weight: 50px;
 }
 
 .item1 {
@@ -689,6 +723,10 @@ textarea::placeholder{
 
 .item9 {
     grid-column-start: 1;
+    grid-column-end: 7;
+}
+.item10 {
+    grid-column-start: 5;
     grid-column-end: 7;
 }
 

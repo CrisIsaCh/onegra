@@ -47,7 +47,7 @@
                         <li><a href="#servicios">Servicios</a></li>
                         <li><a href="">Galeria</a></li>
                         <li><a href="">Conocenos</a></li>
-                        <li><a href="">Contacto</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
 
                     </ul>
 
@@ -161,54 +161,55 @@
             </div>
         </section>
 
-        <section class="contacto">
+        <section class="contacto" id="contacto">
             <div class="contacto-izquierda">
                 <img src="asset/img2.webp" alt="">
             </div>
             <div class="contacto-derecha">
-                <div>
+                <div class="contacto-form-der">
                     <h1>Contactanos</h1>
-                </div>
-                <div class="formulario">
-                    <form action="">
-                        <div class="item1">
-                            <input type="text" name="nombre" id="" placeholder="Nombre">
-                        </div>
-                        <div class="item2">
-                            <input type="text" name="apellido" id="" placeholder="Apellido">
-                        </div>
-                        <div class="item3">
-                            <input type="email" name="email" id="" placeholder="Email">
-                        </div>
-                        <div class="item4">
-                            <input type="number" name="telefono" id="" placeholder="Telefono">
-                        </div>
-                        <div class="item5">
-                            <input type="datetime" name="fecha-evento" id="" placeholder="Fecha del Evento">
-                        </div>
-                        <div class="item6">
-                            <select name="" id="">
-                                <option value="">Casamiento </option>
-                                <option value="">Bautismo</option>
-                                <option value="">15 años</option>
-                                <option value="">Cumpleaños</option>
-                                <option value="">Desayuno-Coffee Break</option>
-                            </select>
-                        </div>
-                        <div class="item7">
-                            <select name="" id="">
-                                <option value="">Formal</option>
-                                <option value="">Iformal</option>
-                            </select>
-                        </div>
-                        <div class="item8">
-                            <input type="text" name="provincia" id=""
-                                placeholder="Provincia donde se ralizara el evento">
-                        </div>
-                        <div class="item9">
-                            <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Consulta"></textarea>
-                        </div>
-                        <input type="submit" value="Enviar" placeholder="Enviar">
+
+                    <div class="formulario">
+                        <form action="">
+                            <div class="item1">
+                                <input type="text" name="nombre" id="" placeholder="Nombre">
+                            </div>
+                            <div class="item2">
+                                <input type="text" name="apellido" id="" placeholder="Apellido">
+                            </div>
+                            <div class="item3">
+                                <input type="email" name="email" id="" placeholder="Email">
+                            </div>
+                            <div class="item4">
+                                <input type="number" name="telefono" id="" placeholder="Telefono">
+                            </div>
+                            <div class="item5">
+                                <input type="date" name="fecha-evento" id="" placeholder="Fecha del Evento">
+                            </div>
+                            <div class="item6">
+                                <select name="" id="">
+                                    <option value="">Casamiento </option>
+                                    <option value="">Bautismo</option>
+                                    <option value="">15 años</option>
+                                    <option value="">Cumpleaños</option>
+                                    <option value="">Desayuno-Coffee Break</option>
+                                </select>
+                            </div>
+                            <div class="item7">
+                                <select name="" id="">
+                                    <option value="">Formal</option>
+                                    <option value="">Iformal</option>
+                                </select>
+                            </div>
+                            <div class="item8">
+                                <input type="text" name="provincia" id=""
+                                    placeholder="Provincia">
+                            </div>
+                            <div class="item9">
+                                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Consulta"></textarea>
+                            </div>
+                            <input class="btn-enviar item10" type="submit" value="Enviar" placeholder="Enviar">
+                    </div>
                     </form>
                 </div>
             </div>
