@@ -501,7 +501,7 @@ section {
 
 .card-serv button {
     width: 84px;
-   
+
 
     background-color: #ff5e00;
     padding: 13px 0;
@@ -550,7 +550,7 @@ section {
 
 .card-serv1 button {
     width: 84px;
-   
+
 
     background-color: #ff5e00;
     padding: 13px 0;
@@ -584,22 +584,24 @@ section {
     height: 550px;
     display: flex;
     flex-direction: column;
-    
+
 
     align-items: center;
     padding: 60px 70px 30px;
 
 
 }
-.contacto-form-der{
+
+.contacto-form-der {
     display: flex;
     flex-direction: column;
     background-color: #08090c;
     height: 100%;
     align-items: center;
-   
+
 }
-.contacto-derecha  div h1{
+
+.contacto-derecha div h1 {
     padding-top: 20px;
     padding-bottom: 25px;
     font-family: 'Gothic A1';
@@ -611,8 +613,8 @@ section {
 .formulario {
     width: 100%;
     height: 100%;
-    
-   
+
+
     padding: 0 35px;
 }
 
@@ -620,10 +622,10 @@ section {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(6, auto);
-    gap:4px;
+    gap: 4px;
     height: 100%;
     /* padding: 3px; */
-    
+
 
 
 }
@@ -640,16 +642,17 @@ select {
     padding: 0 10px;
     background-color: #ffffff;
     color: #000000;
-    
+
     font-size: 12px;
     font-weight: bold;
-   
+
     border: 1px solid white;
     font-family: 'Lato';
-    
+
 
 }
-input::placeholder{
+
+input::placeholder {
     color: rgb(0, 0, 0);
 }
 
@@ -657,23 +660,26 @@ textarea {
     width: 100%;
     padding: 10px 10px;
     background-color: #ffffff;
-    
+
     border: 1px solid white;
-    
+
 }
-textarea::placeholder{
+
+textarea::placeholder {
     color: aliceblue;
 }
-.btn-enviar{
+
+.btn-enviar {
     background-color: #ff5e00;
     border: none;
     border-radius: 0px;
     color: #fff;
     padding: 3px 0;
-    
-   
+
+
 }
-.btn-enviar:hover{
+
+.btn-enviar:hover {
     background-color: #ffffff;
     color: #000;
     font-weight: 50px;
@@ -725,6 +731,7 @@ textarea::placeholder{
     grid-column-start: 1;
     grid-column-end: 7;
 }
+
 .item10 {
     grid-column-start: 5;
     grid-column-end: 7;
@@ -896,7 +903,7 @@ textarea::placeholder{
     .btn-hambur {
         display: flex;
         justify-content: center;
-        filter: drop-shadow(0px 0px 1px rgb(255, 255, 255));
+        background-color:transparent;
         align-items: center;
         border: solid 1px #ff5e00;
         border-radius: 12px;
@@ -923,24 +930,51 @@ textarea::placeholder{
         color: #fff;
     }
 
-    .nav-logo {
+    .ver-logo {
         display: block;
         height: 70px;
     }
 
-    .nav ul {
+    .nav {
         display: none;
-        height: 70px;
-        justify-content: center;
+    }
 
-        gap: 21px;
+    .mobile-header {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        top: 70px;
+        left:-80%;
+        width: 80%;
+        background-color: #ff6200;
+        height: 100vh;
+        align-items: start;
+        padding: 10px 25px;
+
         align-items: center;
 
     }
 
+    .mobile-header li {
 
-    .nav ul li a {
+        background-color: #000000;
+        font-size: 9vw;
+        text-align: end;
+        width: 100%;
+
+        padding: 5px 10px;
+
+
+
+    }
+
+    .mobile-header li a {
         color: #fff;
+    }
+    .open{
+       transform: translateX(100%);
+       transition: all .2s ease;
 
     }
 
@@ -1030,5 +1064,36 @@ textarea::placeholder{
         display: none;
     }
 
+
+    /***********************contacto***************/
+    .contacto {
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    .contacto-izquierda {
+        display: none;
+
+
+    }
+
+    .contacto-derecha {
+        flex-grow: 1;
+        background-image: url("./asset/img2.webp");
+        background-size: cover;
+
+    }
+
+    .formulario form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        height: 100%;
+        padding: 3px;
+
+
+
+    }
 
 }

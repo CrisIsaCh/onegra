@@ -26,15 +26,23 @@
 <body>
     <header>
         <div class="ver">
-            <div class="btn-hambur">
-                <a href=""> <i><i class="fa-solid fa-burger btn-burger"></i></a>
-            </div>
-            <img class="nav-logo" src="asset/logoON.png" alt="">
+            <button class="btn-hambur">
+                 <i class="fa-solid fa-burger btn-burger"></i>
+            </button>
+            <ul class="mobile-header">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="">Galeria</a></li>
+                <li><a href="">Conocenos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+            <img class="ver-logo" src="asset/logoON.png" alt="">
 
         </div>
         <section class="header-section">
             <div class="contenedor-video">
-                <video class="video" src="asset/OvejaNegra.mp4" muted loop autoplay></video>
+                <video class="video" src="asset/La oveja está de coffe.mp4" muted loop autoplay></video>
 
             </div>
             <div class="contenedor">
@@ -202,8 +210,7 @@
                                 </select>
                             </div>
                             <div class="item8">
-                                <input type="text" name="provincia" id=""
-                                    placeholder="Provincia">
+                                <input type="text" name="provincia" id="" placeholder="Provincia">
                             </div>
                             <div class="item9">
                                 <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Consulta"></textarea>
@@ -224,6 +231,7 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a3441e116d.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
+    <script src="ap.js"></script>
 </body>
 
 </html>

@@ -15,9 +15,9 @@ let widthImg=100/sliderSection.length;
 console.log(widthImg);
 
 function moveToRight() {
-    console.log(operacion);
+    
     operacion=operacion+widthImg
-    console.log(operacion);
+    
     if (operacion/100==1) {
         slider.style.transform=`translateX(0%)`;       
         operacion=0;
@@ -51,3 +51,22 @@ function moveToLeft() {
 setInterval(() => {
    moveToRight() 
 }, 5000);
+
+
+/************************boton menu ***************/
+
+
+const btnHamburguesa=document.querySelector(".btn-hambur");
+console.log(btnHamburguesa.children[0]);
+let menu=document.querySelector('.mobile-header');
+
+btnHamburguesa.addEventListener('click',()=>{
+    menu.classList.toggle('open');
+    btnHamburguesa.children[0].classList.remove('fa-burger');
+    btnHamburguesa.children[0].classList.add('fa-x')
+  
+        
+
+    console.log(menu.classList[1]);
+    console.log(btnHamburguesa.children[0].classList);
+})
