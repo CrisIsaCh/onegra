@@ -27,12 +27,12 @@
     <header>
         <div class="ver">
             <button class="btn-hambur">
-                 <i class="fa-solid fa-burger btn-burger"></i>
+                <i class="fa-solid fa-burger btn-burger"></i>
             </button>
             <ul class="mobile-header">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="">Galeria</a></li>
+                <li><a href="#galeria">Galeria</a></li>
                 <li><a href="">Conocenos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
 
@@ -79,7 +79,8 @@
         </section>
     </header>
     <main>
-        <section class="section-slider" id="servicios">
+        <!-- *******************************carrusel********************************************** -->
+        <section class="section-slider">
             <div class="container-carusel">
                 <div class="carruseles" id="slider">
                     <section class="slider-section">
@@ -117,7 +118,8 @@
             </div>
 
         </section>
-        <section class="servicios-detail">
+         <!-- *****************************************servicios************************************* -->
+        <section class="servicios-detail" id="servicios">
             <div class="title-services">
                 <h1>Servicios</h1>
                 <p>Aportamos soluciones integrales para eventos y contamos con propuestas de catering diversas</p>
@@ -141,7 +143,7 @@
 
             </div>
 
-            <!-- ****************************************************************************** -->
+           
             <div class="card-services">
                 <div class="card-serv1">
                     <img src="asset/pareja.jpg" alt="">
@@ -169,6 +171,74 @@
             </div>
         </section>
 
+        <!-- **************************************galeria****************************************** -->
+<section class="galeria" id="galeria">
+    <div class="box">
+        <img src="https://cecinasllanquihue.cl/blog/wp-content/uploads/2019/04/Todos.jpg" alt="">
+        <div class="content">
+            <h3>atus, atque veritatis sint fugiat</h3>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://cecinasllanquihue.cl/blog/wp-content/uploads/2019/04/Todos.jpg" alt="">
+        <div class="content">
+            <h3>atus, atque veritatis sint fugiat</h3>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://cecinasllanquihue.cl/blog/wp-content/uploads/2019/04/Todos.jpg" alt="">
+        <div class="content">
+            <h3>atus, atque veritatis sint fugiat</h3>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://cecinasllanquihue.cl/blog/wp-content/uploads/2019/04/Todos.jpg" alt="">
+        <div class="content">
+            <h3>atus, atque veritatis sint fugiat</h3>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://cecinasllanquihue.cl/blog/wp-content/uploads/2019/04/Todos.jpg" alt="">
+        <div class="content">
+            <h3>atus, atque veritatis sint fugiat</h3>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://cecinasllanquihue.cl/blog/wp-content/uploads/2019/04/Todos.jpg" alt="">
+        <div class="content">
+            <h3>atus, atque veritatis sint fugiat</h3>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://cecinasllanquihue.cl/blog/wp-content/uploads/2019/04/Todos.jpg" alt="">
+        <div class="content">
+            <h3>atus, atque veritatis sint fugiat</h3>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://cecinasllanquihue.cl/blog/wp-content/uploads/2019/04/Todos.jpg" alt="">
+        <div class="content">
+            <h3>atus, atque veritatis sint fugiat</h3>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://cecinasllanquihue.cl/blog/wp-content/uploads/2019/04/Todos.jpg" alt="">
+        <div class="content">
+            <h3>atus, atque veritatis sint fugiat</h3>
+        </div>
+    </div>
+    <div class="box">
+        <img src="https://cecinasllanquihue.cl/blog/wp-content/uploads/2019/04/Todos.jpg" alt="">
+        <div class="content">
+            <h3>atus, atque veritatis sint fugiat</h3>
+        </div>
+    </div>
+    
+   
+
+</section>
+
+<!-- --------------------------contacto------------------------------------------------------- -->
         <section class="contacto" id="contacto">
             <div class="contacto-izquierda">
                 <img src="asset/img2.webp" alt="">
@@ -178,44 +248,53 @@
                     <h1>Contactanos</h1>
 
                     <div class="formulario">
-                        <form action="">
+                        <form action="https://formspree.io/f/xleybkpl" method="post" name="form" onsubmit="return validarFormulario()">
                             <div class="item1">
-                                <input type="text" name="nombre" id="" placeholder="Nombre">
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
                             </div>
                             <div class="item2">
-                                <input type="text" name="apellido" id="" placeholder="Apellido">
+                                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
                             </div>
                             <div class="item3">
-                                <input type="email" name="email" id="" placeholder="Email">
+                                <input type="text" name="email" id="email" placeholder="Email">
                             </div>
                             <div class="item4">
-                                <input type="number" name="telefono" id="" placeholder="Telefono">
+                                <input type="number" name="telefono" id="telefono" placeholder="Telefono">
                             </div>
                             <div class="item5">
-                                <input type="date" name="fecha-evento" id="" placeholder="Fecha del Evento">
+                                <input type="date" name="fecha-evento" id="fecha" placeholder="Fecha del Evento">
                             </div>
                             <div class="item6">
-                                <select name="" id="">
-                                    <option value="">Casamiento </option>
-                                    <option value="">Bautismo</option>
-                                    <option value="">15 años</option>
-                                    <option value="">Cumpleaños</option>
-                                    <option value="">Desayuno-Coffee Break</option>
+                                <select name="evento" id="tipoevento" >
+                                    <option selected disabled value="">Tipo de Evento</option>
+                                    <option value="casamiento">Casamiento </option>
+                                    <option value="bautismo">Bautismo</option>
+                                    <option value="15años">15 años</option>
+                                    <option value="cumpleaños">Cumpleaños</option>
+                                    <option value="desayuno-coffe">Desayuno-Coffee Break</option>
                                 </select>
                             </div>
                             <div class="item7">
-                                <select name="" id="">
-                                    <option value="">Formal</option>
-                                    <option value="">Iformal</option>
+                                <select name="menu" id="menu">
+                                    <option selected disabled value="">Menu</option>
+                                    <option value="formal">Formal</option>
+                                    <option value="informal">Informal</option>
                                 </select>
                             </div>
                             <div class="item8">
-                                <input type="text" name="provincia" id="" placeholder="Provincia">
+                                <!-- <input type="text" name="provincia" id="provincia" placeholder="Provincia"> -->
+
+                                <select name="provincia" id="provincia">
+                                    <option selected disabled value="">Provincia</option>
+                                </select>
                             </div>
                             <div class="item9">
-                                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Consulta"></textarea>
+                                <textarea name="mensaje" id="mensaje" cols="30" rows="10"
+                                    placeholder="Contanos qué tenés pensado sobre la dinámica del evento:
+                                    Hora de comienzo y fin.Lugar, mobiliario disponible y todos
+                                    los detalles para enviarte una propuesta. "></textarea>
                             </div>
-                            <input class="btn-enviar item10" type="submit" value="Enviar" placeholder="Enviar">
+                            <button class="btn-enviar item10" type="submit"   >Enviar</button>
                     </div>
                     </form>
                 </div>
@@ -231,7 +310,10 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/a3441e116d.js" crossorigin="anonymous"></script>
     <script src="app.js"></script>
-    <script src="ap.js"></script>
+    <!-- <script src="ap.js"></script> -->
+    <script src="validar.js"></script>
+    <script src="fechtprov.js"></script>
+    <script src="fechtcomidas.js"></script>
 </body>
 
 </html>
